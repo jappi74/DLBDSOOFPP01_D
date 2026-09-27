@@ -22,7 +22,7 @@ class Studiengang {
     -name: str
     -startdatum: date
     -regelstudienzeit: int
-    -credit_points: int
+    -credit_points_total: int
 }
 
 class Modul {
