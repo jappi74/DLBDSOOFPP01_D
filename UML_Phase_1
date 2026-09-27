@@ -1,0 +1,52 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class Student {
+    -name: str
+}
+
+class Ziel {
+    -bezeichnung: str
+}
+
+class NotenZiel {
+    -ziel_notendurchschnitt: float
+}
+
+class ZeitZiel {
+    -geplantes_enddatum: date
+}
+
+class Studiengang {
+    -name: str
+    -startdatum: date
+    -regelstudienzeit: int
+    -credit_points: int
+}
+
+class Modul {
+    -bezeichnung: str
+    -credit_points: int
+}
+
+class Pruefungsleistung {
+    -note: float
+    -abschlussdatum: date
+    -pruefungsform: str
+    -ist_bestanden: bool
+}
+
+' Vererbung (Spezialisierung der Ziele)
+NotenZiel -up-|> Ziel
+ZeitZiel -up-|> Ziel
+
+' Assoziation und Aggregation
+Student "1" -right- "1" Studiengang : absolviert
+Student "1" o-- "1..*" Ziel : verfolgt
+
+' Struktur des Studiums
+Studiengang "1" o-- "*" Modul : umfasst
+Modul "1" *-- "1" Pruefungsleistung : hat
+
+@enduml
