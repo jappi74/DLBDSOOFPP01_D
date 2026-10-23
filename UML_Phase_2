@@ -1,0 +1,85 @@
+
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class Student {
+    -name: str
+}
+
+abstract class Ziel {
+    -bezeichnung: str
+    +{abstract} berechne_fortschritt(): float
+}
+
+class NotenZiel {
+    -ziel_notendurchschnitt: float
+    +berechne_fortschritt(): float
+}
+
+class ZeitZiel {
+    -geplantes_enddatum: date
+    +berechne_fortschritt(): float
+}
+
+class Studiengang {
+    -name: str
+    -startdatum: date
+    -regelstudienzeit: int
+    -credit_points_total: int
+    +/berechne_ects_fortschritt(): int
+}
+
+class Modul {
+    -bezeichnung: str
+    -credit_points: int
+}
+
+class Pruefungsleistung {
+    -note: float
+    -abschlussdatum: date
+    -pruefungsform: PruefungsForm
+    +/ist_bestanden: bool
+}
+
+enum PruefungsForm {
+    KLAUSUR
+    SEMINARARBEIT
+    ADVANCED_WORKBOOK
+    FALLSTUDIE
+    HAUSARBEIT
+    PROJEKTBERICHT
+    PRAESENTATION
+}
+
+class DashboardController {
+    +berechne_notendurchschnitt(): float
+    +berechne_zeitliche_zielerreichung(): float
+    +aktualisiere_daten(): void
+}
+
+class JsonRepository {
+    -dateipfad: str
+    +lade_daten(): dict
+    +speichere_daten(daten: dict): void
+}
+
+' Vererbung (Spezialisierung der Ziele)
+NotenZiel -up-|> Ziel
+ZeitZiel -up-|> Ziel
+
+' Assoziation und Aggregation
+Student "1" -- "1" Studiengang : absolviert
+Student "1" o-- "1..*" Ziel : verfolgt
+
+' Struktur des Studiums
+Studiengang "1" o-- "*" Modul : umfasst
+Modul "1" *-- "1" Pruefungsleistung : hat
+Pruefungsleistung --> PruefungsForm : verwendet
+
+' Technische Architekturverknüpfungen (Phase 2)
+DashboardController --> Student : steuert / greift zu
+DashboardController --> JsonRepository : nutzt
+JsonRepository ..> Studiengang : persistiert / lädt
+
+@enduml
