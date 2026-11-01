@@ -1,0 +1,180 @@
+@startuml
+
+hide circle
+
+skinparam classAttributeIconSize 0
+
+
+
+class Student {
+
+    -name: str
+
+}
+
+
+
+abstract class Ziel {
+
+    -bezeichnung: str
+
+    +{abstract} berechne_fortschritt(): float
+
+}
+
+
+
+class NotenZiel {
+
+    -ziel_notendurchschnitt: float
+
+    +berechne_fortschritt(): float
+
+}
+
+
+
+class ZeitZiel {
+
+    -geplantes_enddatum: date
+
+    +berechne_fortschritt(): float
+
+}
+
+
+
+class Studiengang {
+
+    -name: str
+
+    -startdatum: date
+
+    -regelstudienzeit: int
+
+    -credit_points_total: int
+
+    +/berechne_ects_fortschritt(): int
+
+}
+
+
+
+class Modul {
+
+    -bezeichnung: str
+
+    -credit_points: int
+
+}
+
+
+
+class Pruefungsleistung {
+
+    -note: Optional[float]
+
+    -abschlussdatum: Optional[date]
+
+    -pruefungsform: PruefungsForm
+
+    +/ist_bestanden: bool
+
+}
+
+
+
+enum PruefungsForm {
+
+    KLAUSUR
+
+    HAUSARBEIT
+
+    PROJEKTARBEIT
+
+    PRAESENTATION
+
+}
+
+
+
+class DashboardController {
+
+    +berechne_notendurchschnitt(): tuple[float, float]
+
+    +berechne_zeitliche_zielerreichung(): dict
+
+    +aktualisiere_daten(): void
+
+}
+
+
+
+class JsonRepository {
+
+    -dateipfad: str
+
+    +lade_daten(): Student
+
+    +speichere_student(student: Student): void
+
+}
+
+
+
+class DashboardView {
+
+    +render(): void
+
+}
+
+
+
+class Main {
+
+    +{static} main(): void
+
+}
+
+
+
+NotenZiel -up-|> Ziel
+
+ZeitZiel -up-|> Ziel
+
+
+
+Student "1" -- "1" Studiengang : absolviert
+
+Student "1" o-- "1..*" Ziel : verfolgt
+
+
+
+
+
+Studiengang "1" o-- "*" Modul : umfasst
+
+Modul "1" *-- "1" Pruefungsleistung : hat
+
+Pruefungsleistung --> PruefungsForm : verwendet
+
+
+
+
+DashboardController --> Student : steuert / greift zu
+
+DashboardController --> JsonRepository : nutzt
+
+JsonRepository ..> Student : persistiert / lädt
+
+DashboardView --> DashboardController : visualisiert
+
+Main --> JsonRepository : initialisiert
+
+Main --> DashboardController : initialisiert
+
+Main --> DashboardView : startet
+
+
+
+@enduml

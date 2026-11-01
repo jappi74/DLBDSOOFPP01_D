@@ -1,0 +1,196 @@
+{
+    "name": "Platzhalter Name",
+    "studiengang": {
+        "name": "Bachelor of Science - Cybersecurity",
+        "startdatum": "2025-05-01",
+        "regelstudienzeit": 3,
+        "credit_points_total": 180,
+        "module": [
+            {
+                "bezeichnung": "Betriebssysteme, Rechnernetze und verteilte Systeme",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.0, "abschlussdatum": "2025-05-25" }
+            },
+            {
+                "bezeichnung": "Einführung in Datenschutz und IT-Sicherheit",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.3, "abschlussdatum": "2025-07-13" }
+            },
+            {
+                "bezeichnung": "Einführung in die Programmierung mit Python",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.3, "abschlussdatum": "2025-05-18" }
+            },
+            {
+                "bezeichnung": "Einführung in das wissenschaftliche Arbeiten für IT und Technik",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": 1.0, "abschlussdatum": "2025-08-21" }
+            },
+            {
+                "bezeichnung": "Projekt: Objektorientierte und funktionale Programmierung mit Python",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Projektarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Einführung in die Netzwerkforensik",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.3, "abschlussdatum": "2025-08-11" }
+            },
+            {
+                "bezeichnung": "Statistik - Wahrscheinlichkeit und deskriptive Statistik",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Requirements Engineering",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.0, "abschlussdatum": "2026-01-04" }
+            },
+            {
+                "bezeichnung": "Projekt: Agiles Projektmanagement",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Projektarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Mathematik Grundlagen I",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 3.7, "abschlussdatum": "2025-12-27" }
+            },
+            {
+                "bezeichnung": "Grundzüge des System-Pentestings",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.3, "abschlussdatum": "2025-07-28" }
+            },
+            {
+                "bezeichnung": "Theoretische Informatik und Mathematische Logik",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 2.0, "abschlussdatum": "2026-02-08" }
+            },
+            {
+                "bezeichnung": "Social Engineering und Insider Threats",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": 1.7, "abschlussdatum": "2025-11-22" }
+            },
+            {
+                "bezeichnung": "Technische und betriebliche IT-Sicherheitskonzeptionen",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.7, "abschlussdatum": "2026-01-18" }
+            },
+            {
+                "bezeichnung": "Projekt: Social Engineering",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Präsentation", "note": 1.7, "abschlussdatum": "2026-09-11" }
+            },
+            {
+                "bezeichnung": "DevSecOps und gängige Software-Schwachstellen",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.7, "abschlussdatum": "2026-09-13" }
+            },
+            {
+                "bezeichnung": "Kryptografische Verfahren",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": 1.3, "abschlussdatum": "2025-08-15" }
+            },
+            {
+                "bezeichnung": "Host- und Softwareforensik",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.3, "abschlussdatum": "2025-12-14" }
+            },
+            {
+                "bezeichnung": "Seminar: Aktuelle Themen in Computer Science",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Projekt: Einsatz und Konfiguration von SIEM-Systemen",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Projektarbeit", "note": 2.7, "abschlussdatum": "2026-07-05" }
+            },
+            {
+                "bezeichnung": "Threat Modeling",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.0, "abschlussdatum": "2026-05-31" }
+            },
+            {
+                "bezeichnung": "Standards der Informationssicherheit",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Projekt: Threat Modeling",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Grundlagen der objektorientierten Programmierung mit Java",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": null, "abschlussdatum": "2025-05-01" }
+            },
+            {
+                "bezeichnung": "Principles of Ethical Hacking",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Projekt: Allgemeine Programmierung mit C/C++",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Projektarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Softwarearchitektur mobiler Geräte",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.0, "abschlussdatum": "2026-07-19" }
+            },
+            {
+                "bezeichnung": "Project: Pentesting",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Projektarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Kollaboratives Arbeiten",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": null, "abschlussdatum": "2025-05-01" }
+            },
+            {
+                "bezeichnung": "Interkulturelle und ethische Handlungskompetenzen",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": 1.3, "abschlussdatum": "2025-09-07" }
+            },
+            {
+                "bezeichnung": "Konfliktmanagement und Mediation",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 2.0, "abschlussdatum": "2026-02-08" }
+            },
+            {
+                "bezeichnung": "Interaktion und Kommunikation in Organisationen",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 2.0, "abschlussdatum": "2026-03-01" }
+            },
+            {
+                "bezeichnung": "Business Intelligence",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Klausur", "note": 1.7, "abschlussdatum": "2026-05-25" }
+            },
+            {
+                "bezeichnung": "Projekt: AI Fluency - Einführung in die generative KI",
+                "credit_points": 5,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            },
+            {
+                "bezeichnung": "Bachelorarbeit",
+                "credit_points": 10,
+                "pruefungsleistung": { "pruefungsform": "Hausarbeit", "note": null, "abschlussdatum": null }
+            }
+        ]
+    },
+    "ziele": [
+        {
+            "bezeichnung": "Notendurchschnitt anstreben",
+            "ziel_notendurchschnitt": 1.5
+        },
+        {
+            "bezeichnung": "Regelstudienzeit einhalten",
+            "geplantes_enddatum": "2028-04-30"
+        }
+    ]
+}
